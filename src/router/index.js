@@ -6,6 +6,7 @@ import VehiclesShow from '../views/VehiclesShow.vue'
 import VehiclesEdit from '../views/VehiclesEdit.vue'
 import SignupView from '../views/SignupView.vue'
 import LoginView from '../views/LoginView.vue'
+import LogoutView from '../views/LogoutView.vue'
 
 
 const routes = [
@@ -23,6 +24,11 @@ const routes = [
     path: '/login',
     name: 'login-view',
     component: LoginView
+  },
+  {
+    path: '/logout',
+    name: 'logout-view',
+    component: LogoutView
   },
   {
     path: '/vehicles',
