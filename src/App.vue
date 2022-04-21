@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/vehicles">The Whips</router-link> |
     <router-link to="/vehicles/new">Add a Whip</router-link> |
-    <router-link to="/signup">Want to be a part of the Sick Whip crew?</router-link>
+    <router-link to="/signup">Want to be a part of the Sick Whip crew?</router-link> |
+    <router-link to="/login">Log in</router-link>
   </nav>
   <router-view />
 </template>
