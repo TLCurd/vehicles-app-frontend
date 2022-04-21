@@ -4,6 +4,7 @@ import VehiclesIndex from '../views/VehiclesIndex.vue'
 import VehiclesNew from '../views/VehiclesNew.vue'
 import VehiclesShow from '../views/VehiclesShow.vue'
 import VehiclesEdit from '../views/VehiclesEdit.vue'
+import SignupView from '../views/SignupView.vue'
 
 
 const routes = [
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/signup',
+    name:'signup-view',
+    component: SignupView
   },
   {
     path: '/vehicles',
