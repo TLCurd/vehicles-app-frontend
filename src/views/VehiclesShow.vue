@@ -18,13 +18,20 @@ export default {
         console.log(response.data);
         this.vehicle = response.data;
       })
+    },
+    deleteVehicle: function () {
+      console.log('deleting not sick whips...')
+      axios.delete(`/vehicles/${this.$route.params.id}`).then(response => {
+        console.log(response.data);
+        this.$router.push("/vehicles")
+      })
     }
   },
 };
 </script>
 
 <template>
-  <div class="home">
+  <div class="vehicles-show">
     <h1>{{ message }}</h1>
     <h2>
       {{ vehicle.make }} {{ vehicle.model }}
@@ -38,6 +45,8 @@ export default {
     <router-link to="/vehicles">Back to all the whips</router-link>
     <hr>
     <a v-bind:href="`/vehicles/${vehicle.id}/edit`">Do you want to update this sick whip?!?</a>
+    <br>
+    <button v-on:click="deleteVehicle()">Want to delete this sick whip?</button>
   </div>
 </template>
 
