@@ -30,6 +30,7 @@ export default {
       <p><b> Model:</b> {{ vehicle.model }} </p>
       <p> <b>Years Manufactured:</b> {{ vehicle.years_made }} </p>
       <img v-bind:src="vehicle.image">
+      <br>
       <router-link v-bind:to="`/vehicles/${vehicle.id}`">More details</router-link>
       <hr>
 

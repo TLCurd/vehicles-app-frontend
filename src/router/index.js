@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import VehiclesIndex from '../views/VehiclesIndex.vue'
 import VehiclesNew from '../views/VehiclesNew.vue'
 import VehiclesShow from '../views/VehiclesShow.vue'
+import VehiclesEdit from '../views/VehiclesEdit.vue'
 
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: '/vehicles/:id',
     name: 'vehicles-show',
     component: VehiclesShow
+  },
+  {
+    path: '/vehicles/:id/edit',
+    name: 'vehicles-edit',
+    component: VehiclesEdit
   },
   {
     path: '/about',
