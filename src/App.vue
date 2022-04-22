@@ -42,7 +42,7 @@ export default {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/recipes/new" class="nav-link">Add a Sick Whip!</a>
+            <a href="/vehicles/new" class="nav-link">Add a Sick Whip!</a>
           </li>
         </ul>
         <form class="d-flex">
